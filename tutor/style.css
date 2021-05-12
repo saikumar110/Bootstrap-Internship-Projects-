@@ -1,0 +1,11 @@
+header{
+
+     height: 100vh;
+     background-image: url("https://source.unsplash.com/1600x900/?nature,water");
+     background-repeat: no-repeat;
+     background-position: center;
+
+}
+#footer{
+     background-color: cyan;
+}

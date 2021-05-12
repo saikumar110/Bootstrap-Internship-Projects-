@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+#social{
+	display: grid;
+	grid-template-rows: repeat(3,1fr);
+	grid-template-columns: repeat(2,1fr);
+}
+</style>
+<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale-1">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		
+		<!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Blog</title>
+</head>
+<body>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>The Harry Potter Fan Fiction</h2>
+      <div class="fakeimg">
+      		<img src="https://source.unsplash.com/1600x900/?Harry Potter,Harry Potter" class="img-fluid">
+      </div>
+      
+      <div>
+  	<img src="https://source.unsplash.com/1600x900/?Harry Potter,Harry Potter" style="width: 40px;height: 40px; border-radius: 50%">
+  		<em>Mikheal Schwarzinsky</em> | <em>Development</em> | April 22,2018 | 118comments <br>
+  		
+		</div>
+
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <button class=" bg-danger btn-dark btn-default mb-3 w-25" >View More</button>
+    </div>
+   
+  </div>
+  <div class="rightcolumn">
+    <div class="card" id="social">
+      <h2>Social Section</h2>
+      <div class="lnks" style="height:60px;width: 60px;"> <img src="https://source.unsplash.com/1600x900/?smartphone,laptop" style="width: 40px;height: 40px; border-radius: 50%"></div>
+      <div class="lnks" style="height:60px;width: 60px;"> <img src="https://source.unsplash.com/1600x900/?smartphone,laptop" style="width: 40px;height: 40px; border-radius: 50%"></div>
+      <div class="lnks" style="height:60px;width: 60px;"> <img src="https://source.unsplash.com/1600x900/?smartphone,laptop" style="width: 40px;height: 40px; border-radius: 50%"></div>
+      <div class="lnks" style="height:60px;width: 60px;"> <img src="https://source.unsplash.com/1600x900/?nature,water" style="width: 40px;height: 40px; border-radius: 50%"></div>
+      <div class="lnks" style="height:60px;width: 60px;"> <img src="https://source.unsplash.com/1600x900/?smartphone,laptop" style="width: 40px;height: 40px; border-radius: 50%"></div>
+      <div class="lnks" style="height:60px;width: 60px;"> <img src="https://source.unsplash.com/1600x900/?smartphone,laptop" style="width: 40px;height: 40px; border-radius: 50%"></div>
+     
+    </div>
+    <div class="card">
+      <h3>Google Ads</h3>
+      <div class=""><img src="https://source.unsplash.com/1600x900/?google,googleads" style="width: 200px;height: 100px;"></div><br>
+      <div class=""><img src="https://source.unsplash.com/1600x900/?google,googleads" style="width: 200px;height: 100px;"></div><br>
+      <div class=""><img src="https://source.unsplash.com/1600x900/?google,googleads" style="width: 200px;height: 100px;"></div>
+    </div>
+    <div class="card">
+      <h6>Tags</h6>
+		<div class="mt-5">
+		<button class="btn-default bg-dark btn-dark">Art</button>
+		<button class="btn-default bg-dark btn-dark mt-1">Awesome</button>
+		<button class="btn-default bg-dark btn-dark">Classic</button>
+		<button class="btn-default bg-dark btn-dark mt-1">Photo</button><br>
+		<button class="btn-default bg-dark btn-dark mt-1">Wordpress</button>
+		<button class="btn-default bg-dark btn-dark mt-1">Videos</button>
+		<button class="btn-default bg-dark btn-dark mt-1">Standard</button>
+		<button class="btn-default bg-dark  btn-dark mt-1">Gaming</button>
+		<button class="btn-default bg-dark  btn-dark mt-1">Photo</button>
+		<button class="btn-default bg-dark  btn-dark mt-1">Music</button>
+		<button class="btn-default bg-dark  btn-dark mt-1">Data</button>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

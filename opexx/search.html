@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale-1">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		
+		<!-- Bootstrap CSS -->
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Search Your Bid</title>
+</head>
+<body>
+<!-- navbar -->
+<nav class="navbar navbar-expand-sm  bg-primary ">
+  <!-- Links -->
+  <ul class="navbar-nav  ">
+    <li class="nav-item">
+      <a class="nav-link  text-white" href="index.html">OPEXX</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="search.html">SEARCH</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" href="pricing.html">PRICING</a>
+    </li>
+    
+  </ul>
+</nav>
+
+<div class="jumbotron bg-info text-white text-center">
+  <!-- Nav pills -->
+<ul class="nav nav-pills">
+  <li class="nav-item ">
+    <a class="nav-link active text-white" data-toggle="pill" href="#home">Live Tenders</a>
+  </li>
+  <li class="nav-item"> 
+    <a class="nav-link  text-white" data-toggle="pill" href="#menu1">Winners</a>
+  </li>
+  
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content mt-3">
+  <div class="tab-pane container active" id="home">
+  
+
+	<div id="accordion" class="">
+    <div class="p-1">
+     
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+      			<form class="">
+  <div class="row  p-1">
+    <div class="col">
+      <input type="text" class="form-control" id="email" placeholder="Keyword" name="keyword">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Location" name="location">
+    </div>
+  </div>
+  <div class="row p-1">
+    <div class="col">
+      <input type="text" class="form-control" id="email" placeholder="Min Value" name="email">
+    </div>
+    <div class="col">
+      <input type="password" class="form-control" placeholder="Max Value" name="pswd">
+    </div>
+  </div>
+  <div class="row p-1">
+    <div class="col">
+      <input type="text" class="form-control" id="email" placeholder="Byer's Name" name="email">
+    </div>
+    <div class="col">
+      <input type="password" class="form-control" placeholder="CPV" name="pswd">
+    </div>
+  </div>
+  <div class="row p-1">
+  	<div class="col">
+  		
+  <select class="form-control" id="sel1">
+    <option>Published</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+  	</div>
+  	<div class="col">
+  		
+  <select class="form-control" id="sel1">
+    <option>Deadline</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+  	</div>
+  </div>
+</form>
+      </div>
+       <div class="card-header">
+        <a class=" btn  text-white" data-toggle="collapse" href="#collapseOne">
+          Show More/Less
+        </a>
+      </div>
+    </div>
+    
+    
+  </div>
+
+
+  </div>
+  <div class="tab-pane container fade p-1" id="menu1">
+  	<p class="text-white mt-5"> Winner and award information allow you to analyze previously awarded contracts. Start your free 14-day trial now to see which companies have won tenders and which organizations have issued tenders before.</p>
+  	<button class="btn bg-success text-white w-25">START FREE Trial</button>
+  	<button class="btn bg-light text-muted w-25">Login</button>
+  </div>
+  
+</div>
+</div>
+<div class="text-center">
+	<h1 class="mb-5">9,000,000 tenders at your fingertips.</h1>
+	<a href="" class=""> Start free trial for 14 days, No credit card needed.</a>
+	<br>
+	<button class="btn bg-success text-white mt-5">START FREE TRiAL</button>
+</div>
+
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
